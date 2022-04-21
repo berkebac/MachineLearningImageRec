@@ -61,11 +61,11 @@
 				F96B0ACD28119C8500C1B4D5 /* AppDelegate.swift */,
 				F96B0ACF28119C8500C1B4D5 /* SceneDelegate.swift */,
 				F96B0AD128119C8500C1B4D5 /* ViewController.swift */,
+				F96B0AE12811A1FF00C1B4D5 /* MobileNetV2.mlkitmodel */,
 				F96B0AD328119C8500C1B4D5 /* Main.storyboard */,
 				F96B0AD628119C8900C1B4D5 /* Assets.xcassets */,
 				F96B0AD828119C8900C1B4D5 /* LaunchScreen.storyboard */,
 				F96B0ADB28119C8900C1B4D5 /* Info.plist */,
-				F96B0AE12811A1FF00C1B4D5 /* MobileNetV2.mlkitmodel */,
 			);
 			path = MachineLearningImageRec;
 			sourceTree = "<group>";

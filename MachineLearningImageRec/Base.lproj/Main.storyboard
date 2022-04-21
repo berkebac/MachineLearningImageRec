@@ -18,45 +18,45 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BTL-MC-2if">
                                 <rect key="frame" x="20" y="79" width="374" height="427"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZwA-ED-HeS">
-                                <rect key="frame" x="120" y="567" width="174" height="67"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="67" id="cMj-eX-BkE"/>
+                                    <constraint firstAttribute="width" constant="374" id="8a1-SQ-KLO"/>
+                                    <constraint firstAttribute="height" constant="427" id="Xzk-t3-7AA"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7h3-4h-TQy">
+                                <rect key="frame" x="87" y="689" width="241" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="94" id="D0z-fA-gMI"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Change Image"/>
+                                <connections>
+                                    <action selector="changeImageClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YkH-SH-8go"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZwA-ED-HeS">
+                                <rect key="frame" x="52" y="568" width="311" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="rqe-cN-RVz"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7h3-4h-TQy">
-                                <rect key="frame" x="143" y="698" width="128" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="Z5q-sy-TRO"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <action selector="changeImageClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YkH-SH-8go"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ZwA-ED-HeS" firstAttribute="top" secondItem="BTL-MC-2if" secondAttribute="bottom" constant="61" id="1e4-bd-UgP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BTL-MC-2if" secondAttribute="trailing" constant="20" id="8Fc-Y7-k8H"/>
-                            <constraint firstItem="BTL-MC-2if" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="AuT-OF-MxD"/>
-                            <constraint firstItem="ZwA-ED-HeS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="BQY-E2-GVl"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7h3-4h-TQy" secondAttribute="bottom" constant="104" id="HYp-iO-zMV"/>
-                            <constraint firstItem="BTL-MC-2if" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="I61-ch-F6Y"/>
-                            <constraint firstItem="BTL-MC-2if" firstAttribute="centerX" secondItem="ZwA-ED-HeS" secondAttribute="centerX" id="MPf-x4-fCk"/>
-                            <constraint firstItem="BTL-MC-2if" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="TVH-MU-CnQ"/>
-                            <constraint firstItem="BTL-MC-2if" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="XMa-fm-gFa"/>
-                            <constraint firstItem="7h3-4h-TQy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="143" id="akw-Bc-sI7"/>
-                            <constraint firstItem="BTL-MC-2if" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="c6v-vE-kwl"/>
-                            <constraint firstItem="ZwA-ED-HeS" firstAttribute="top" secondItem="BTL-MC-2if" secondAttribute="bottom" constant="61" id="cYu-gV-iFL"/>
-                            <constraint firstItem="7h3-4h-TQy" firstAttribute="top" secondItem="ZwA-ED-HeS" secondAttribute="bottom" constant="64" id="fgO-pw-UG1"/>
-                            <constraint firstItem="ZwA-ED-HeS" firstAttribute="centerX" secondItem="7h3-4h-TQy" secondAttribute="centerX" id="pR3-ui-Ra5"/>
+                            <constraint firstItem="ZwA-ED-HeS" firstAttribute="centerX" secondItem="7h3-4h-TQy" secondAttribute="centerX" id="ZIM-12-PW2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7h3-4h-TQy" secondAttribute="bottom" constant="79" id="aZv-TW-kDF"/>
+                            <constraint firstItem="BTL-MC-2if" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="co9-Vf-t3O"/>
+                            <constraint firstItem="BTL-MC-2if" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="dpi-Jb-fbO"/>
+                            <constraint firstItem="ZwA-ED-HeS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="iFz-zy-zVs"/>
+                            <constraint firstItem="7h3-4h-TQy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="jKy-Tx-blT"/>
+                            <constraint firstItem="BTL-MC-2if" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="kih-R8-dZ5"/>
+                            <constraint firstItem="7h3-4h-TQy" firstAttribute="top" secondItem="ZwA-ED-HeS" secondAttribute="bottom" constant="45" id="wKh-Um-OsG"/>
+                            <constraint firstItem="BTL-MC-2if" firstAttribute="centerX" secondItem="ZwA-ED-HeS" secondAttribute="centerX" id="xYN-1I-nEq"/>
+                            <constraint firstItem="ZwA-ED-HeS" firstAttribute="top" secondItem="BTL-MC-2if" secondAttribute="bottom" constant="62" id="xch-ZD-b3k"/>
                         </constraints>
                     </view>
                     <connections>

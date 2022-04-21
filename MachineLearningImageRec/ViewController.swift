@@ -34,32 +34,31 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        
         imageView.image = info[.originalImage] as? UIImage
-        self.dismiss(animated: true)
-        
+        self.dismiss(animated: true, completion: nil)
+                
         if let ciImage = CIImage(image: imageView.image!) {
             chosenImage = ciImage
-            
         }
-        recognizeImage(image : chosenImage)
+                
+        recognizeImage(image: chosenImage)
     }
     
     func recognizeImage(image: CIImage) {
-        
         // 1-Request
-        do {
-            if let model = try? VNCoreMLModel(for: MobileNetV2().model) {
-                let request = VNCoreMLRequest(model: model) { vnrequest, error in
-                    if error != nil {
+        textLabel.text = "Finding ..."
+                if let model = try? VNCoreMLModel(for: MobileNetV2().model) {
+                    let request = VNCoreMLRequest(model: model) { (vnrequest, error) in
+                        
                         if let results = vnrequest.results as? [VNClassificationObservation] {
-                            let topresult = results.first
-                            
+                            if results.count > 0 {
+                                
+                            let topResult = results.first
                             DispatchQueue.main.sync {
                                 
-                                let confidenceLevel = (topresult?.confidence ?? 0) * 100
+                                let confidenceLevel = (topResult?.confidence ?? 0) * 100
                                 let rounded = Int (confidenceLevel * 100) / 100
-                                self.textLabel.text = "\(rounded)% it's \(topresult?.identifier)"
+                                self.textLabel.text = "\(rounded)% it's \(topResult!.identifier)"
                             }
                         }
                     }
@@ -78,7 +77,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                 
                 
             }
-        }
+        
         
         
         
